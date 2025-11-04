@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "streak7-frontend",
+  "builds": [
+    { "src": "pages/**/*.jsp", "use": "@vercel/static" },
+    { "src": "assets/**/*", "use": "@vercel/static" },
+    { "src": "WEB-INF/web.xml", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/pages/index.jsp" }
+  ]
+}
